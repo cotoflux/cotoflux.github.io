@@ -18,7 +18,7 @@ footer .social a:hover {
 
 
 
-//From here is the slider
+/*From here is the slider*/
 
 .slider {
 	width: 95%;
@@ -59,7 +59,7 @@ footer .social a:hover {
 }
 
 
-// From here is the to do task
+/* From here is the to do task */
 
 input[type='submit'], button, [aria-label]{
     cursor: pointer;
