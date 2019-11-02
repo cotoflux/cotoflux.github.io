@@ -8,6 +8,17 @@ footer{
     display: flex;
 }
 
+footer .social a{
+    color: white;
+}
+
+footer .social a:hover {
+    color: lightcoral;
+  }
+
+
+
+//From here is the slider
 
 .slider {
 	width: 95%;
@@ -46,3 +57,13 @@ footer{
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+
+// From here is the to do task
+
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+  #spoiler{
+    display: none;
+  }
