@@ -6,26 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Nuria Puig Portfolio</title>
+
 
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="activities.html">Activitis</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nuria Puig</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Presentación <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quien soy</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mis proyectos 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Factoria F5 - Bootcamp</a>
+                <a class="dropdown-item" href="#">IT Academy</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Trainin during COVID-19</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
         <div class="slider">
 			<ul>
 			    <li>
-                    <h2> Bienvenido a mi portfolio web! Mi objetivo con esta página es mostrar mi evolución</h2>
+                    <h2> Bienvenido a mi portfolio web! Mi objetivo con esta página es evolucionar</h2>
                 </li>
                 <li>
                     <h2>Cada semana dedico muchas horas a mi consolidar conocimiento y mi Git crece día a día...</h2>
                 </li>
         		<li>
-                    <h2> Así pues cada semana quiero compartir proyectos de los que he aprendido. </h2>
+                    <h2> Quiero mandar mis fuerzas a todos los afectados por el COVID-19 y busco aprovechar este tiempo para evolucionar </h2>
         		</li>
 				<li>
                     <h2>Si quieres ponerte en contacto conmigo tines mi Git y mi Linkedin en la página!!</h2>
@@ -33,18 +62,24 @@
 			</ul>
 		</div>
     </header>
+    
+    <div class="jumbotron">
+      <h1 class="display-4">Núria Puig</h1>
+      <p class="lead">Fullstack Developer</p>
+      <hr class="my-4">
+      <p>Gracias por visitar mi web. En ella puedes encontrar una compilación de mis proyectos hechos durante el último año.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Ver proyectos</a>
+    </div>
+    
+
     <main>
-        <section>
 
-            <h1>Núria Puig</h1>
-            <p>Fullstack Developer</p>
-
-        </section>
 
 
     </main>
 
 <hr>    
+<h4>Proyecto "Todo List"</h4>
 <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
         <input type="text" id="add-name" placeholder="New task">
         <input type="submit" value="Add">
