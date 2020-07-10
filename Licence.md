@@ -1,0 +1,1 @@
+This repo and the information that contains is considered private. If you want to use any part of it you just first have to notice me to see if is ok for me to diclose this information. 
