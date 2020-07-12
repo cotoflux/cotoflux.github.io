@@ -8,68 +8,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Nuria Puig Awards</title>
-    <style>
+<style>
       
-
-            body {
-        display: grid;
-        place-content: center;
-        height: 100vh;
-      }
-
-      .visual {
-        height: 100px;
-        width: 100%;
-        background: wheat;
-        margin: 0.5rem 0;
-      }
-
-      .card {
-        width: clamp(23ch, 50vw, 46ch);
-        display: flex;
-        flex-direction: column;
-        background: lightpink;
-        padding: 1rem;
-      }
-
       body {
-        font-family: system-ui, sans-serif;
-      }
+  display: grid;
+  height: 100vh;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
-      h1 {
-        font-size: 1.5rem;
-      }
-    </style>
+
+div {
+  display: grid;
+  place-items: center;
+  background: lightpink;
+  justify-content: space-between;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightpink;
+  padding: 1rem;
+}
+
+.photosCard{
+  width: 30vw;
+
+}
+
+</style>
 </head>
 <body>
 
+  <div class="card">
+    <h3>Running and Sports</h3>
+    <img class="photosCard" src="https://get.pxhere.com/photo/person-people-running-run-recreation-jogging-leisure-sports-early-in-the-morning-physical-exercise-hard-work-outdoor-recreation-human-action-538093.jpg" alt="Person running">
+    <p>I love running, combined with different sports, depending on the day needs. You can find me playing Paddle 
+      with my mates o doing some Yoga to relax. In fact any sport is good to finish the day and relax.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Hiking</h3>
+    <img class="photosCard" src="https://get.pxhere.com/photo/fence-hair-hiking-dog-animal-walk-fur-portrait-jeans-hike-mammal-gate-hiking-shoes-dogs-golden-retriever-legs-animals-head-leash-vertebrate-break-retriever-stainless-animal-portrait-master-dog-guide-dog-like-mammal-dog-crossbreeds-1345741.jpg" alt="Perro en la montaña">
+    <p>Beeing in the nature walking with my dog is my weekend pleasure. I love just going out and climb any mountain
+    , love the freedom to be in the middle of the nature and just listen and enjoy it.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Painting</h3>
+    <img class="photosCard" src="https://storage.needpix.com/rsynced_images/painting-2937880_1280.jpg" alt="Impresionist paintings">
+    <p>I discovered Paining when I was in Paris. Since then I keep painting with my oils or my Ipad, it really
+      depends on where I am and what I can do. 
+    </p>
+  </div>
 
-  
-    <div class="parent white">
-      <div class="card purple">
-        <h1>Running and Sport</h1>
-        <div class="visual yellow"></div>
-        <p>I enjoy doing a bunch of sports, the main one right now is Running. I enjoy relaxing doing my 5km afther
-          a tough day.
-        </p>
-      </div>
-      <hr>
-      <div class="card purple">
-        <h1>Hiking and Dogs</h1>
-        <div class="visual yellow"></div>
-        <p>Love doing a hiking wikend and claim mountains with my dog. I enjoy beeing in the middle of the nature
-          for some hours or the whole weekend and get to the top.
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="card purple">
-      <h1>Painting</h1>
-      <div class="visual yellow"></div>
-      <p>Since I lived in Paris I realised I loved painting. So when I can not go out for any reason I also enjoy
-        painting with oil. I started modifing some of my favourite painters like Manet, Monet,... all impresionists.
-        Now I just explore nature and I paint any beautiful flower.
-      </p>
-    </div>
+
 </body>
 </html>
