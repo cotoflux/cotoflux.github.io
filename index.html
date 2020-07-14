@@ -13,23 +13,42 @@
       .desktop{
         background-image: url("images/desk/desk_Index.jpg");
         min-height: 100%;
-        position: relative;
-        opacity: 0.65;
+        opacity: 0.75;
         background-position: center;
-        background-size: cover;
+        background-size: 100%;
+        display: grid;
+        place-items: center;
+        height: max-content;
+        font-size: 40rem;
       }
       .img-center{
+        position: relative;
+        place-items: center;
         left: 0;
         top: 50%;
         width: 100%;
         text-align: center;
-        color: #000;
+        color:white;
 
       }
+      .parent {
+        display: grid;
+        place-items: center;
+        font-size: large;
+        background-image: url("images/desk/desk_Index.jpg");
+        max-height: auto;
+      }
+      .space{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        font-size: medium;
+      }
+
     </style>
 </head>
 <body>
-    <header>
+  <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- <a class="navbar-brand" href="#">Nuria Puig</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,29 +93,31 @@
               </div>
             </li>
           </ul>
-
         </div>
       </nav>
-      <div class="slider">
-        <ul>
-            <li><p> Welcome to my web portfolio!</p></li>
-            <li><p> Thank you for your visit  </p></li>
-            <li><p> I hope afther you read this web you understand better my background</p></li>
-            <li><p> If you have any question just contact me!</p></li>
-        </ul>
-      </div>
-    </header>
-    <div class="desktop">
-      <div class="img-center">
+
+    <div class="slider">
+          <ul>
+              <li><p> Welcome to my web portfolio!</p></li>
+              <li><p> Thank you for your visit  </p></li>
+              <li><p> I hope afther you read this web you understand better my background</p></li>
+              <li><p> If you have any question just contact me!</p></li>
+          </ul>
+    </div>
+  </header>
+
+  <div class="parent">
+      <div class="info">
         <br>
         <br>
-        <h1 class="col-md-12 col-md-offset-2 text-center ">Núria Puig</h1>
-        <p class="col-md-12 col-md-offset-2 text-center">Junior Fullstack Developer</p>
+        <h1 class="col-md-12 col-md-offset-2 text-center">Núria Puig</h1>
+        <p class="col-md-12 col-md-offset-2 text-center ">Junior Fullstack Developer</p>
         <br>
         <br>
         <div class="social, container">
-          <div class="container">
-            <div>
+          <div class="row space">
+            <div class="space">
+
               <i class="fab fa-x fa-github-alt x3">
               <a href="https://github.com/cotoflux">GitHub</a></i>
             </div>
@@ -109,19 +130,19 @@
         <br>
         <br>
     </div>
+  </div>
 
     <div class="jumbotron">
       <p> All started on 6th October 2018 at 2.37AM, I submited my aplication to Google Android Basic Scholarship and some months later
         in Novembre 16th I started my Nanodegree in Udacity thanks to Google. Before I had had worked in Maketing and 
         had my own company . Since then I discoverd my passion development. Do you want to know more?
         you are in the right place! Welcome to my page I hope you will get to know me better and  maybe we can work
-        together? See what I can do and what I have done and contact me it will be a pleasure to meet you. </menu>
-      </menu>
+        together? See what I can do and what I have done and contact me it will be a pleasure to meet you. 
 
     </div>
 
     <main>
-      <div class="card">
+      <div class="card mb-0">
         <div class="card-header">
           Quotes about me
         </div>
@@ -148,7 +169,6 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-
         <div class="card" id="companyOwner" style="width: 18rem">
           <img src="../images/negocio.jpg" class="card-img-top" alt="Marketing">
           <div class="card-body">
@@ -157,8 +177,6 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-
-
         <div class="card" id="softwareDeveloper" style="width: 18rem">
           <img src="../images/developer.jpg" class="card-img-top" alt="Marketing">
           <div class="card-body">
@@ -168,11 +186,8 @@
           </div>
         </div>
     </div>
-
-
     </main>
  
-
 <hr>    
 <h4>Proyecto "Todo List"</h4>
 <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
@@ -283,3 +298,4 @@
 
 </body>
 </html>
+
