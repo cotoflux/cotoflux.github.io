@@ -45,6 +45,69 @@
         font-size: medium;
       }
 
+/* Paralax*/
+      body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -106,31 +169,20 @@
     </div>
   </header>
 
-  <div class="parent">
-      <div class="info">
-        <br>
-        <br>
-        <h1 class="col-md-12 col-md-offset-2 text-center">Núria Puig</h1>
-        <p class="col-md-12 col-md-offset-2 text-center ">Junior Fullstack Developer</p>
-        <br>
-        <br>
-        <div class="social, container">
-          <div class="row space">
-            <div class="space">
-
-              <i class="fab fa-x fa-github-alt x3">
-              <a href="https://github.com/cotoflux">GitHub</a></i>
-            </div>
-            <div>
-              <i class="fab fa-x fa-linkedin-in">
-              <a href="https://www.linkedin.com/in/nuria-puig-riera/">LinkedIn</a></i>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
+  <div class="bgimg-1">
+    <div class="caption">
+      <div class="column">
+        <span class="border">NURIA PUIG</span>
+      </div>
+      <br>
+      <div class="column">
+        <span class="border">Junior Web Developer</span>
+      </div>
     </div>
+
   </div>
+
+
 
     <div class="jumbotron">
       <p> All started on 6th October 2018 at 2.37AM, I submited my aplication to Google Android Basic Scholarship and some months later
@@ -294,6 +346,18 @@
 
 
     <footer>
+
+      <div class="social container">
+        <div class="row space">
+          <div class="space">
+            <i class="fab fa-2x fa-github-alt x3">
+            <a href="https://github.com/cotoflux">GitHub</a></i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="fab fa-2x fa-linkedin-in">
+            <a href="https://www.linkedin.com/in/nuria-puig-riera/">LinkedIn</a></i>
+          </div>
+        </div>
+      </div>
     </footer>
 
 </body>
