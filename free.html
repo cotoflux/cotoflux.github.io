@@ -29,6 +29,59 @@ img{
   display:grid;
   place-items: center;
 }
+ul{
+  list-style-type: none;
+}
+.reading{
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover + .reading{
+  display: block;
+}
+ .running {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover + .running {
+  display: block;
+}
+ .painting {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover  + .painting  {
+  display: block;
+}
+
+.hiking {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover  +.hiking  {
+  display: block;
+}
+.dog {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover + .dog {
+  display: block;
+}
+
+.relaxing{
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+span:hover +.relaxing{
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -40,12 +93,18 @@ img{
   <br>
   <br>
   <ul class="options">
-    <li>READING</li>
-    <li>RUNNING</li>
-    <li>PAINTING</li>
-    <li>HIKING</li>
-    <li>PLAYING WITH MY DOG</li>
-    <li>RELAXING</li>
+    <span>READING</span>
+    <div class="reading">Love reading, biographies and books that help me evolve.</div>
+    <span>RUNNING</span>
+    <div class="running">At least twice in a week I do run 5km and do some core exercices.</div>
+    <span>PAINTING</span>
+    <div class="painting">Love oils and whenever I have some time I enjoy painting mostly figurative</div>
+    <span>HIKING</span>
+    <div class="hiking">Just love the sensation of beeing in the middle of the forest and walk.</div>
+    <span>PLAYING WITH MY DOG</span>
+    <div class="dog">We enjoy our time together</div>
+    <span>RELAXING</span>
+    <div class="relaxing">Turn everything off and chill, sometimes is needed</div>
   </ul>
 </div>
 </div>
