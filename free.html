@@ -10,63 +10,60 @@
     <title>Nuria Puig Awards</title>
 <style>
       
-      body {
+  body {
   display: grid;
   height: 100vh;
-  grid-gap: 1rem;
+  font-family: system-ui, sans-serif;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
-
-div {
-  display: grid;
+img{
+  width: 100%;
+}
+.cuadrado{
+  border-style: solid;
+  color:red
+}
+.container{
+  display:grid;
   place-items: center;
-  background: lightpink;
-  justify-content: space-between;
+  text-align: center;
 }
-
-body {
-  font-family: system-ui, sans-serif;
+.options{
+  display:grid;
+  place-items: center;
 }
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background:grey;
-  padding: 1rem;
-}
-
-.photosCard{
-  width: 30vw;
-
-}
-
 </style>
 </head>
 <body>
 
-  <div class="card">
-    <h3>Running and Sports</h3>
-    <img class="photosCard" src="https://get.pxhere.com/photo/person-people-running-run-recreation-jogging-leisure-sports-early-in-the-morning-physical-exercise-hard-work-outdoor-recreation-human-action-538093.jpg" alt="Person running">
-    <p>I love running, combined with different sports, depending on the day needs. You can find me playing Paddle 
-      with my mates o doing some Yoga to relax. In fact any sport is good to finish the day and relax.
-    </p>
+
+<div class="col-md-12 container text-justify cuadrado">
+  <div>
+  <h4> On my free time you will find me</h4>
+  <br>
+  <br>
+  <ul class="options">
+    <li>READING</li>
+    <li>RUNNING</li>
+    <li>PAINTING</li>
+    <li>HIKING</li>
+    <li>PLAYING WITH MY DOG</li>
+    <li>RELAXING</li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="col-md-12 cuadrado">
+  <div class="row">
+
+    <div>
+      <img src="./images/free/mountain.jpg" alt="You see a rock with an animal watching you climb">
+    </div>
+    <div class="container">
+      <p> "Hi Nuria, follow me I will show you the mountain!"</p>
+    </div>
   </div>
-  <div class="card">
-    <h3>Hiking</h3>
-    <img class="photosCard" src="https://get.pxhere.com/photo/fence-hair-hiking-dog-animal-walk-fur-portrait-jeans-hike-mammal-gate-hiking-shoes-dogs-golden-retriever-legs-animals-head-leash-vertebrate-break-retriever-stainless-animal-portrait-master-dog-guide-dog-like-mammal-dog-crossbreeds-1345741.jpg" alt="Perro en la montaña">
-    <p>Beeing in the nature walking with my dog is my weekend pleasure. I love just going out and climb any mountain
-    , love the freedom to be in the middle of the nature and just listen and enjoy it.
-    </p>
-  </div>
-  <div class="card">
-    <h3>Painting</h3>
-    <img class="photosCard" src="https://storage.needpix.com/rsynced_images/painting-2937880_1280.jpg" alt="Impresionist paintings">
-    <p>I discovered Paining when I was in Paris. Since then I keep painting with my oils or my Ipad, it really
-      depends on where I am and what I can do. 
-    </p>
-  </div>
+</div>
 
 
 </body>
