@@ -11,76 +11,83 @@
 <style>
       
   body {
-  display: grid;
-  height: 100vh;
-  font-family: system-ui, sans-serif;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-img{
-  width: 100%;
-}
+    display: grid;
+    height: 100vh;
+    font-family: system-ui, sans-serif;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  img{
+    width: 100%;
+  }
+  .container{
+    display:grid;
+    place-items: center;
+    text-align: center;
+  }
+  .options{
+    display:grid;
+    place-items: center;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .reading{
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover + .reading{
+    display: block;
+  }
+  .running {
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover + .running {
+    display: block;
+  }
+  .painting {
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover  + .painting  {
+    display: block;
+    color:white;
+  }
 
-.container{
-  display:grid;
-  place-items: center;
-  text-align: center;
-}
-.options{
-  display:grid;
-  place-items: center;
-}
-ul{
-  list-style-type: none;
-}
-.reading{
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover + .reading{
-  display: block;
-}
- .running {
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover + .running {
-  display: block;
-}
- .painting {
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover  + .painting  {
-  display: block;
-}
+  .hiking {
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover  +.hiking  {
+    display: block;
+    color:white;
+  }
+  .dog {
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover + .dog {
+    display: block;
+  }
 
-.hiking {
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover  +.hiking  {
-  display: block;
-}
-.dog {
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover + .dog {
-  display: block;
-}
-
-.relaxing{
-  background-color: yellow;
-  padding: 20px;
-  display: none;
-}
-span:hover +.relaxing{
-  display: block;
+  .relaxing{
+    background-color: rgb(134, 134, 127);
+    padding: 20px;
+    display: none;
+    color:white;
+  }
+  span:hover +.relaxing{
+    display: block;
 }
 </style>
 </head>
