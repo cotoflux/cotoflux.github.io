@@ -270,6 +270,114 @@ h1 {
   }
 }
 
+/*
+
+Cards of the opinions
+
+*/
+
+#block-cards {
+  padding-top: 100px;
+  padding-bottom: px;
+  background-color: #fff;;    
+}
+ 
+/* Panel for the cards. */
+.panel.panel-card {
+  position: relative;
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+  position: relative;
+  z-index: 2;
+  height: 150px;
+  border-bottom-color:#fff;
+  overflow: hidden;
+  
+  -webkit-transition: height 600ms ease-in-out;
+          transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120%;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+}
+.panel.panel-card .panel-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.panel.panel-card .panel-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 95%;
+  opacity: 1; 
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+ 
+.panel.panel-card .panel-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+ 
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+} 
+ 
+.panel.panel-card .panel-thumbnails {
+  padding: 0 15px 20px;
+}
+.panel-thumbnails .thumbnail {
+  width: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+} 
+
+ 
+
+.panel.panel-card:hover .panel-heading {
+  height: 55px;
+  
+  -webkit-transition: height 400ms ease-in-out;
+          transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+  opacity: 0;
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+  padding-top: 20px;
+  
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+}
+.row{
+    flex-direction: row;
+    justify-content: center;
+}
+
     </style>
 </head>
 <body>
@@ -372,215 +480,105 @@ h1 {
     <main>
 
 
-<h1>Que opinan las persona que me conocen</h1>
-
-<div class="boxesContainer">
-
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Card One</h3>
-        <p>Que dice de mi...</p>
-        <p>Marta - Consultora Quonext</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>Back Side One</h3>
-        <p>Content in card one</p>
-        <a href="#">Button 1</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Card Two</h3>
-        <p>Hover to flip</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>Back Side Two</h3>
-        <p>Content in card two</p>
-        <a href="#">Button 2</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Card Three</h3>
-        <p>Hover to flip</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>Back Side Three</h3>
-        <p>Content in card three</p>
-        <a href="#">Button 3</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Card Four</h3>
-        <p>Hover to flip</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>Back Side Four</h3>
-        <p>Content in card four</p>
-        <a href="#">Button 4</a>
-      </div>
-    </div>
-  </div>
-
-</div>
+      <section id="block-cards">
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                            
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Marta</h4>
+                            <h6 class="panel-header">Consultora QuoNext</h6>
+                            <small>Nuria aprende super rápido me encanta su capacidad de trabajar en equipo!
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <div class="thumbnail">
+                                      <i class="fab fa-linkedin-in fa-3x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>  
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Maria</h4>
+                            <h6 class="panel-header">Aun no lo se</h6>
+                            <small>Me encanta trabajar con núria es una buena compañera y apoya siempre el equipo
+                            </canvas>
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Kavan</h4>
+                            <h6 class="panel-header">Compañero de formación Factoria F5</h6>
+                            <small>Tiene una fuerza de voluntad y una constancia admirables.</small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1564057318174-8fd93d59641f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                            
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Isabel</h4>
+                            <h6 class="panel-header">Directora CEPIBASE</h6>
+                            <small>Es una alumna aplicada y constante, se nota que disfruta con lo que hace.
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
     
-<!--
-    <main>
-    
-      <h2>Mis etapas laborales</h2>
-      
-      <div id="evolucionProfesional" class="card-deck"> 
-        <div class="card" id="marketing" style="width: 18rem">
-          <img src="../images/marketing.jpg" class="card-img-top" alt="Marketing">
-          <div class="card-body">
-            <h5 class="card-title">Marketing</h5>
-            <p class="card-text">I did study a Master Degree and have seveal years experience in Maketing, hence I keep my skills up to date in Digital Marketing</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="companyOwner" style="width: 18rem">
-          <img src="../images/negocio.jpg" class="card-img-top" alt="Marketing">
-          <div class="card-body">
-            <h5 class="card-title">Company Owner</h5>
-            <p class="card-text">For more than 7 years I had own my own business</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="softwareDeveloper" style="width: 18rem">
-          <img src="../images/developer.jpg" class="card-img-top" alt="Marketing">
-          <div class="card-body">
-            <h5 class="card-title">softwareDeveloper</h5>
-            <p class="card-text">I am relativelly young as software developer, but passionate about my job!</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-    </div>
-    </main>
- 
-<hr>    
-<h4>Proyecto "Todo List"</h4>
-<form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
-        <input type="text" id="add-name" placeholder="New task">
-        <input type="submit" value="Add">
-      </form>
-      
-      <div id="spoiler" role="aria-hidden">
-        <form action="javascript:void(0);" method="POST" id="saveEdit">
-          <input type="text" id="editTask">
-          <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
-        </form>
-      </div>
-      
-      <p id="counter"></p>
-      
-      <table>
-        <tr>
-          <th>Mis tareas para esta semana</th>
-        </tr>
-          <tbody id="myTasks">
-          </tbody>
-      </table>
-      
-      <script>
-      var app = new function() {
-        this.el = document.getElementById('myTasks');
-        this.myTasks = ['terminar mokup de la primera version', 'estudio JavaScrip para añadir movimiento al item '];
-        this.Count = function(data) {
-          var el   = document.getElementById('counter');
-          var name = 'weekTask';
-          if (data) {
-            if (data > 1) {
-              name = 'tasks';
-            }
-            el.innerHTML = data + ' ' + name ;
-          } else {
-            el.innerHTML = 'No ' + name;
-          }
-        };
-        
-        this.FetchAll = function() {
-          var data = '';
-          if (this.myTasks.length > 0) {
-            for (i = 0; i < this.myTasks.length; i++) {
-              data += '<tr>';
-              data += '<td>' + this.myTasks[i] + '</td>';
-              data += '<td><button onclick="app.Edit(' + i + ')">Edit</button></td>';
-              data += '<td><button onclick="app.Delete(' + i + ')">Delete</button></td>';
-              data += '</tr>';
-            }
-          }
-          this.Count(this.myTasks.length);
-          return this.el.innerHTML = data;
-        };
-        this.Add = function () {
-          el = document.getElementById('add-name');
-          // Get the value
-          var weekTask = el.value;
-          if (weekTask) {
-            // Add the new value
-            this.myTasks.push(weekTask.trim());
-            // Reset input value
-            el.value = '';
-            // Dislay the new list
-            this.FetchAll();
-          }
-        };
-        this.Edit = function (item) {
-          var el = document.getElementById('editTask');
-          // Display value in the field
-          el.value = this.myTasks[item];
-          // Display fields
-          document.getElementById('spoiler').style.display = 'block';
-          self = this;
-          document.getElementById('saveEdit').onsubmit = function() {
-            // Get value
-            var weekTask = el.value;
-            if (weekTask) {
-              // Edit value
-              self.myTasks.splice(item, 1, weekTask.trim());
-              // Display the new list
-              self.FetchAll();
-              // Hide fields
-              CloseInput();
-            }
-          }
-        };
-        this.Delete = function (item) {
-          // Delete the current row
-          this.myTasks.splice(item, 1);
-          // Display the new list
-          this.FetchAll();
-        };
-        
-      }
-      app.FetchAll();
-      function CloseInput() {
-        document.getElementById('spoiler').style.display = 'none';
-      }
-      </script>
-    <hr>
-    -->
 
 
-    <footer>
-
-
-    </footer>
 
 </body>
 </html>
