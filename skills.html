@@ -10,9 +10,95 @@
     <title>Nuria Puig Skills</title>
     <script src="https://kit.fontawesome.com/7c604236ad.js" crossorigin="anonymous"></script>
     <style>
+      -card{
+        border-radius: 20px;
+        margin: 10px;
+      }
       .card:hover {
         box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
+      /*Creativity*/
+    
+        p {
+          color: #fff;
+          font-size: 1em;
+          font-weight: 700;
+        }
+        p span {
+          display: inline-block;
+          position: relative;
+          transform-style: preserve-3d;
+          perspective: 500;
+          -webkit-font-smoothing: antialiased;
+        }
+        p span::before,
+        p span::after {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: -1px;
+          transform-origin: left top;
+          transition: all ease-out 0.3s;
+          content: attr(data-text);
+        }
+        p span::before {
+          z-index: 1;
+          color: rgba(0,0,0,0.2);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+        }
+        p span::after {
+          z-index: 2;
+          color: bottom: white;
+          text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+          transform: rotateY(-40deg);
+        }
+        p span:hover::before {
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+        }
+        p span:hover::after {
+          transform: rotateY(-10deg);
+        }
+        p span + span {
+          margin-left: 0.3em;
+        }
+        @media (min-width: 20em) {
+          p {
+            font-size: 2em;
+          }
+          p span::before,
+          p span::after {
+            display: block;
+          }
+        }
+        @media (min-width: 30em) {
+          p {
+            font-size: 3em;
+          }
+        }
+        @media (min-width: 40em) {
+          p {
+            font-size: 5em;
+          }
+        }
+        @media (min-width: 60em) {
+          p {
+            font-size: 8em;
+          }
+        }
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        .peeled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #684da3;
+  height: 100%;
+  cursor:pointer;
+}
     </style>
 </head>
 <body>
@@ -71,18 +157,41 @@
 </header>
 
     <h1 class="container">Skills</h1>
-    <div class="card">
-    <p>During my work experience I develop several skills apart from the technical ones, like:
-    </p>
-    <ul>
-      <li>Problem solving oriented person</li>
-      <li>Interpersonal skills</li>
-      <li>Management sills</li>
-      <li>Customer service</li>
-      <li>Active Listening sills</li>
-      <li>Comunicative</li>
-    </ul>
-  </div>
+    <div class="row">
+        <div class="card col-md-6 ">
+            <h6>General skills that define me as a person:
+            </h6>
+            <ul>
+              <li>Resiliant</li>
+              <li>Comunicative and self responsable</li>
+              <li>Cooperative</li>
+              <li>Self motivated</li>
+            </ul>
+        </div>
+        <br>
+        <div class="card col-md-6">
+            <h6>At work I am</h6>
+            <ul>
+              <li>Problem solving</li>
+              <li>Interpersonal skills</li>
+              <li>Management sills</li>
+              <li>Customer service oriented</li>
+              <li>Can work as a team member as much as take lead</li>
+          </ul>
+        </div>
+        <div class="container">
+          <p aria-label="Creative">
+            <span data-text="C">C</span>
+            <span data-text="R">R</span>
+            <span data-text="E">E</span>
+            <span data-text="A">A</span>
+            <span data-text="T">T</span>
+            <span data-text="I">I</span>
+            <span data-text="V">V</span>
+            <span data-text="E">E</span>
+          </p>
+        </div>
+    </div>
 
 </body>
 </html>
