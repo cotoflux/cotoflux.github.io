@@ -116,10 +116,13 @@ section {
 }
 
 
-a:hover,
+a:hover{
+	font-weight: bold;
+}
+
 a:active,
 a:focus {
-	background: #32408f;
+	background: #bbbecc;
 	color: #ffffff;
 	text-decoration: none;
 }
