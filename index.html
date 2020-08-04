@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Fredoka+One" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7c604236ad.js" crossorigin="anonymous"></script>
+    <title>Nuria Puig Home</title>
+    <style>
+      .desktop{
+        background-image: url("images/desk/desk_Index.jpg");
+        min-height: 100%;
+        opacity: 0.75;
+        background-position: center;
+        background-size: 100%;
+        display: grid;
+        place-items: center;
+        height: max-content;
+        font-size: 40rem;
+      }
+      .img-center{
+        position: relative;
+        place-items: center;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color:white;
+
+      }
+      .parent {
+        display: grid;
+        place-items: center;
+        font-size: large;
+        background-image: url("images/desk/desk_Index.jpg");
+        max-height: auto;
+      }
+      .space{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        font-size: medium;
+      }
+
+/* Paralax*/
+      body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+/*CARD*/
+body {
+  color: #333;
+  font-family: "Raleway", Arial, Helvetica, serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+h1 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background: #222;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: cornflowerblue;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+/*
+
+Cards of the opinions
+
+*/
+
+#block-cards {
+  padding-top: 100px;
+  padding-bottom: px;
+  background-color: #fff;;    
+}
+ 
+/* Panel for the cards. */
+.panel.panel-card {
+  position: relative;
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+  position: relative;
+  z-index: 2;
+  height: 150px;
+  border-bottom-color:#fff;
+  overflow: hidden;
+  
+  -webkit-transition: height 600ms ease-in-out;
+          transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120%;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+}
+.panel.panel-card .panel-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.panel.panel-card .panel-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 95%;
+  opacity: 1; 
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+ 
+.panel.panel-card .panel-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+ 
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+} 
+ 
+.panel.panel-card .panel-thumbnails {
+  padding: 0 15px 20px;
+}
+.panel-thumbnails .thumbnail {
+  width: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+} 
+
+ 
+
+.panel.panel-card:hover .panel-heading {
+  height: 55px;
+  
+  -webkit-transition: height 400ms ease-in-out;
+          transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+  opacity: 0;
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+  padding-top: 20px;
+  
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+}
+.row{
+    flex-direction: row;
+    justify-content: center;
+}
+
+#personal{
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  size: 26px;
+}
+a:hover{
+  font-weight: bold;
+  
+}
+
+.border:hover{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.30);
+
+}
+
+a{
+  color:white;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Nuria Puig</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/biography.html">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/timeline_experience.html">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Languages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./cotoflux.github.io/views/pr.languages.html">Programing Languages</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./cotoflux.github.io/views/languages.html">Human Languages</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/awards.html">Honors and awards</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="./cotoflux.github.io/views/galery.html">Gallery</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="https://docs.google.com/document/d/1xJ_H8kOF205PylXqjQhiDm8zOWo2p_CqPQk4Abte3Yc/edit?usp=sharing"><b><strong>my CV</strong></b></a>
+            </li> 
+          </ul>
+        </div>
+      </nav>
+
+
+  </header>
+
+  <div class="bgimg-1">
+    <div class="caption">
+      <div class="column">
+        <span class="border"><a href="https://docs.google.com/document/d/1xJ_H8kOF205PylXqjQhiDm8zOWo2p_CqPQk4Abte3Yc/edit?usp=sharing">NURIA PUIG</a></span>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+
+    <div class="jumbotron">
+      <p> All started on 6th October 2018 at 2.37AM, I submited my aplication to Google Android Basic Scholarship and some months later
+        in Novembre 16th I started my Nanodegree in Udacity thanks to Google. Before I had had worked in Maketing and 
+        had my own company . Since then I discoverd my passion development. Do you want to know more?
+        you are in the right place! Welcome to my page I hope you will get to know me better and  maybe we can work
+        together? See what I can do and what I have done and contact me it will be a pleasure to meet you. 
+      </p>
+    </div>
+    <div class="social container">
+      <div class="row space">
+        <span>Contacta conmigo: </span>
+        <div class="space">
+          <i class="fab fa-2x fa-github-alt x3">
+          <a href="https://github.com/cotoflux">GitHub</a></i>
+          &nbsp; &nbsp; &nbsp;
+          <i class="fab fa-2x fa-linkedin-in">
+          <a href="https://www.linkedin.com/in/nuria-puig-riera/">LinkedIn</a></i>
+        </div>
+      </div>
+    </div>
+    <br>
+    <main>
+
+ 
+      <section id="block-cards">
+
+        <h4>Testimonios</h4>
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                            
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Marta</h4>
+                            <h6 class="panel-header">Consultora QuoNext</h6>
+                            <small>Nuria aprende super rápido me encanta su capacidad de trabajar en equipo!
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <div class="thumbnail">
+                                      <i class="fab fa-linkedin-in fa-3x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>  
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Maria</h4>
+                            <h6 class="panel-header">Aun no lo se</h6>
+                            <small>Me encanta trabajar con núria es una buena compañera y apoya siempre el equipo
+                            </canvas>
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Kavan</h4>
+                            <h6 class="panel-header">Compañero de formación Factoria F5</h6>
+                            <small>Tiene una fuerza de voluntad y una constancia admirables.</small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="https://images.unsplash.com/photo-1564057318174-8fd93d59641f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+                            
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header">Isabel</h4>
+                            <h6 class="panel-header">Directora CEPIBASE</h6>
+                            <small>Es una alumna aplicada y constante, se nota que disfruta con lo que hace.
+                            </small>
+                        </div>
+                        <div class="panel-thumbnails text-center">
+                          <div class="row">
+                              <div class="col-xs-4 text-center">
+                                  <div class="thumbnail">
+                                    <i class="fab fa-linkedin-in fa-3x"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<br>
+<br>
+<footer></footer>
+
+</body>
+</html>
+
