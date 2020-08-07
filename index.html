@@ -399,7 +399,37 @@ a:hover{
   background-color: lightgray;
 }
 
+i{
+  padding: 1%;
+  font-size: 20px;
+}
+footer{
+  background-color: lightgray;
+}
+
+.button{
+  width: 200px;
+}
+
+.button:hover{
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.thumbnail:hover{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
     </style>
+
+
+  <script>
+  function openWin() {
+    window.open("https://docs.google.com/document/d/1xJ_H8kOF205PylXqjQhiDm8zOWo2p_CqPQk4Abte3Yc/edit?usp=sharing","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=550, height=550");
+  }
+  </script>
+
 </head>
 <body>
   <header>
@@ -595,17 +625,29 @@ a:hover{
 <br>
 <br>
 <footer>
-  <div class="row">
-    <div>
-      <i class="far fa-envelope">cotoflux@gmail.com</i>
+  <div class="container footer">
+    <br>
+    <br>
+    <div class="row">
+      <br>
+      <br>
+      <i class="far fa-envelope">&nbsp; &nbsp; cotoflux@gmail.com</i>
+      <br>
+      <br>
+      <i class="fas fa-phone">&nbsp; &nbsp; + 34 - 637316705</i>
+      <br>
     </div>
-    &nbsp;
-    &nbsp;
-    <div>
-      <i class="fas fa-phone">+ 34 - 637316705</i>
+    <div class="row">
+      <form>
+        <input class="button" type="button" value="Click to see my CV" onclick="openWin()">
+      </form>
     </div>
+    <br>
+    <br>
   </div>
 </footer>
+<br>
+<br>
 
 </body>
 </html>
