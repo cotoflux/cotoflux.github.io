@@ -154,6 +154,70 @@
         background-position: center center;
       }
 
+      .btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,.btn-icon > i {
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn > span {
+  padding:14px 18px 16px;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn:focus > span {
+  background:#9a9a9a
+}
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {
+  color:#FFF
+}
+
+.btn-icon > span {
+  border-radius:0 5px 5px 0
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,.btn-facebook:focus > i {
+  color:#3b5998
+}
+
+.btn-facebook > span {
+  background:#3b5998
+}
+
 </style>
 <script>
     function openWin() {
@@ -231,11 +295,8 @@
                     </div>
                     <div class="panel-thumbnails">
                         <div class="column">
-                            <div class="col-xs-4 text-center">
-                                <div class="thumbnail">
-                                  <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                                </div>
-
+                            <div class="col-xs-12 text-center">
+                              <a class="btn btn-icon btn-facebook" href="#"><i class="fa fa-github-alt"></i><span> Github </span></a>
                             </div>
                         </div>
                     </div>
