@@ -154,69 +154,11 @@
         background-position: center center;
       }
 
-      .btn:hover {
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
-}
+      /*Buttons for projects*/
 
-.btn:focus {
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.btn > span,.btn-icon > i {
-  float:left;
-  padding:13px;
-  -webkit-transition:all .5s;
-  -moz-transition:all .5s;
-  transition:all .5s;
-  line-height:1em
-}
-
-.btn > span {
-  padding:14px 18px 16px;
-  white-space:nowrap;
-  color:#FFF;
-  background:#b8b8b8
-}
-
-.btn:focus > span {
-  background:#9a9a9a
-}
-
-.btn-icon > i {
-  border-radius:5px 0 0 5px;
-  position:relative;
-  width:13px;
-  text-align:center;
-  font-size:1.25em;
-  color:#fff;
-  background:#212121
-}
-
-.btn-icon > i:after {
-  content:"";
-  border:8px solid;
-  border-color:transparent transparent transparent #222;
-  position:absolute;
-  top:13px;
-  right:-15px
-}
-
-.btn-icon:hover > i,.btn-icon:focus > i {
-  color:#FFF
-}
-
-.btn-icon > span {
-  border-radius:0 5px 5px 0
-}
-
-/*Facebook*/
-.btn-facebook:hover > i,.btn-facebook:focus > i {
-  color:#3b5998
-}
-
-.btn-facebook > span {
-  background:#3b5998
-}
+      .btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+.btn { margin-bottom:10px; }
 
 </style>
 <script>
@@ -294,12 +236,13 @@
                         </small>
                     </div>
                     <div class="panel-thumbnails">
-                        <div class="column">
-                            <div class="col-xs-12 text-center">
-                              <a class="btn btn-icon btn-facebook" href="#"><i class="fa fa-github-alt"></i><span> Github </span></a>
-                            </div>
-                        </div>
-                    </div>
+                      <div class="column">
+                          <div class="col-xs-12 text-center">
+                            <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                              <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
+                          </div>
+                      </div>
+                  </div>
                 </div>   
     		</div>
 		    <div class="col-sm-6 col-md-3">
@@ -315,14 +258,13 @@
                         </small>
                     </div>
                     <div class="panel-thumbnails">
-                        <div class="row">
-                            <div class="col-xs-4 text-center">
-                                <div class="thumbnail">
-                                  <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      <div class="column">
+                          <div class="col-xs-12 text-center">
+                            <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                              <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
+                          </div>
+                      </div>
+                  </div>
             	</div>   
     		</div>
             <div class="col-sm-6 col-md-3">
@@ -336,11 +278,10 @@
                         <small>I have been developing actions in web pages and learnt how to work with OOP with this language. It is also a languages.</small>
                     </div>
                     <div class="panel-thumbnails">
-                      <div class="row">
-                          <div class="col-xs-4 text-center">
-                              <div class="thumbnail">
-                                <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                              </div>
+                      <div class="column">
+                          <div class="col-xs-12 text-center">
+                            <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                              <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
                           </div>
                       </div>
                   </div>
@@ -359,11 +300,10 @@
                         </small>
                     </div>
                     <div class="panel-thumbnails">
-                      <div class="row">
-                          <div class="col-xs-4 text-center">
-                              <div class="thumbnail">
-                                <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                              </div>
+                      <div class="column">
+                          <div class="col-xs-12 text-center">
+                            <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                              <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
                           </div>
                       </div>
                   </div>
@@ -388,15 +328,13 @@
                       </small>
                   </div>
                   <div class="panel-thumbnails">
-                      <div class="column">
-                          <div class="col-xs-4 text-center">
-                              <div class="thumbnail">
-                                <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
+                    <div class="column">
+                        <div class="col-xs-12 text-center">
+                          <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                            <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
+                        </div>
+                    </div>
+                </div>
               </div>   
       </div>
       <div class="col-sm-6 col-md-3">
@@ -413,14 +351,13 @@
                       </small>
                   </div>
                   <div class="panel-thumbnails">
-                      <div class="row">
-                          <div class="col-xs-4 text-center">
-                              <div class="thumbnail">
-                                <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="column">
+                        <div class="col-xs-12 text-center">
+                          <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                            <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
+                        </div>
+                    </div>
+                </div>
             </div>   
       </div>
           <div class="col-sm-6 col-md-3">
@@ -434,11 +371,10 @@
                       <small>I learned Laravel in CEPIBASE and Factoria F5, then in Electry Project projects where developed in the languae and continued my learning..</small>
                   </div>
                   <div class="panel-thumbnails">
-                    <div class="row">
-                        <div class="col-xs-4 text-center">
-                            <div class="thumbnail">
-                              <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                            </div>
+                    <div class="column">
+                        <div class="col-xs-12 text-center">
+                          <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                            <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
                         </div>
                     </div>
                 </div>
@@ -456,11 +392,10 @@
                       </small>
                   </div>
                   <div class="panel-thumbnails">
-                    <div class="row">
-                        <div class="col-xs-4 text-center">
-                            <div class="thumbnail">
-                              <i onclick="this.innerHTML='!yet'" class="fab fa-github-alt fa-2x"></i>
-                            </div>
+                    <div class="column">
+                        <div class="col-xs-12 text-center">
+                          <a class="btn btn-success btn-labeled" href="https://github.com/cotoflux" role="button">
+                            <span class="btn-label"><i class="fab fa-github-alt"></i></span>Project Examples</a>
                         </div>
                     </div>
                 </div>
