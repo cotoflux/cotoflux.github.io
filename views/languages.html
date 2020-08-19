@@ -235,6 +235,22 @@
                          1px -1px 0 #fff; 
                         
       }
+
+      /*Badge*/
+      .chip{
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.25);
+        margin: 0 10px;
+        
+        cursor: pointer;
+      }
+      .chip.info{
+        background: #0a8684;
+        color: whitesmoke;
+      }
 </style>
 <script>
     function openWin() {
@@ -407,7 +423,7 @@
 <section id="otherBox">
   <div class="container">
     <div class="row">
-        <h2>Not native in:</h2>
+        <h2>Not native level in:</h2>
     </div>
     <br>
     <div class="row justify-content-center">
@@ -455,8 +471,9 @@
       <br>
       <div class="card" style="width: 25rem;">
         <div class="card-body text-center">
-          <h3 class="card-title">German</h3>
-          <h6 class="card-subtitle mb-2 text-muted">Studied in Goethe Intitute Barcelona</h6>
+          <div><h3 class="card-title">German</h3>	<span class="chip info">Studing now</span></div>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Goethe Intitute Barcelona</h6>
           <div class="row pestcontent">
             <div class="col-md-12">
               <b>Oral knowledge</b>
