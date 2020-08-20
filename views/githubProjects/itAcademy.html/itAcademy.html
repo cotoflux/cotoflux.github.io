@@ -70,9 +70,8 @@
         background: #333;
         color: #fff;
         text-align: center;
-        margin: 0 0 5% 0;
-        padding: 0.5em;
-        margin: 0 0 5% 0;
+        margin: 0;
+        padding: 1em;
       }
 
 
@@ -83,107 +82,19 @@
 
       */
       .card{
-        margin: 20px;
+        background-color: whitesmoke;
+        width: 20rem;
+        height: 20rem;
+        margin: 5rem auto;
+        border-radius: 1rem;
+        box-shadow: 0 0 5rem rgba(0,0,0,0.3);
+        transition: 0.4s;
 
       }
 
-      #block-cards {
-        margin-top: 5%;
-        background-color: #fff;;    
-      }
-      
+
+
       /* Panel for the cards. */
-      .panel.panel-card {
-        position: relative;
-        height: 200px;
-        width: 25%;
-        border: none;
-        overflow: hidden;
-      }
-      .panel.panel-card .panel-heading {
-        position: relative;
-        z-index: 2;
-        height: 150px;
-        border-bottom-color:#fff;
-        overflow: hidden;
-        
-        -webkit-transition: height 600ms ease-in-out;
-                transition: height 600ms ease-in-out;
-      }
-      .panel.panel-card .panel-heading img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-        width: 120%;
-        
-        -webkit-transform: translate3d(-50%,-50%,0);
-                transform: translate3d(-50%,-50%,0);
-      }
-      .panel.panel-card .panel-heading button {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        z-index: 3;
-      }
-      .panel.panel-card .panel-figure {
-        position: absolute;
-        top: auto;
-        left: 50%;
-        z-index: 3;
-        width: 70px;
-        height: 80px;
-        background-color: #fff;
-        border-radius: 95%;
-        opacity: 1; 
-        -webkit-box-shadow: 0 0 0 3px #fff;
-                box-shadow: 0 0 0 3px #fff;
-        
-        -webkit-transform: translate3d(-50%,-50%,0);
-                transform: translate3d(-50%,-50%,0);
-        
-        -webkit-transition: opacity 400ms ease-in-out;
-                transition: opacity 400ms ease-in-out;
-      }
-      
-      .panel.panel-card .panel-body {
-        padding-top: 40px;
-        padding-bottom: 20px;
-      
-        -webkit-transition: padding 400ms ease-in-out;
-                transition: padding 400ms ease-in-out;
-      } 
-      
-      .panel.panel-card .panel-thumbnails {
-        padding: 0 15px 20px;
-      }
-      .panel-thumbnails .thumbnail {
-        width: 60px;
-        max-width: 100%;
-        margin: 0 auto;
-        background-color: #fff;
-      } 
-
-      
-
-      .panel.panel-card:hover .panel-heading {
-        height: 55px;
-        
-        -webkit-transition: height 400ms ease-in-out;
-                transition: height 400ms ease-in-out;
-      }
-      .panel.panel-card:hover .panel-figure {
-        opacity: 0;
-        
-        -webkit-transition: opacity 400ms ease-in-out;
-                transition: opacity 400ms ease-in-out;
-      }
-      .panel.panel-card:hover .panel-body {
-        padding-top: 20px;
-        
-        -webkit-transition: padding 400ms ease-in-out;
-                transition: padding 400ms ease-in-out;
-      }
 
       /**Footer*/
       
@@ -242,28 +153,48 @@
 
       .centerImageCard1{
           background-image: url("../../../images/imagesGithub/spring.jpa.jpg");
-          background-repeat: no-repeat;
-          background-position: center; 
+          border-radius: 1rem 1rem 0 0;
+          height: 10rem;
+          background-color: #000;
+          background-size: 120%;
+          background-position: center;
       }
+
       .centerImageCard2{
           background-image: url("../../../images/imagesGithub/flowerShop.jpg");
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          background-position: center; 
-
+          border-radius: 1rem 1rem 0 0;
+          height: 10rem;
+          background-color: #000;
+          background-size: 120%;
+          background-position: center;
       }
       .centerImageCard3{
           background-image: url("../../../images/imagesGithub/rocket.jpg");
-          background-size: 100% auto;
-          background-position: inherit;
-          background-repeat: no-repeat;
-          background-position: center; 
+          border-radius: 1rem 1rem 0 0;
+          height: 10rem;
+          background-color: #000;
+          background-size: 120%;
+          background-position: center;
       }
       .cardCenter{
           margin:auto;
           margin-top: 10px;
           font-weight: bolder;
           font-size: 1.2rem;
+          color: black;
+          
+      }
+
+ 
+
+ 
+
+
+      .content {
+        padding: 0 2rem;
+            }
+      a {
+          width: auto;
       }
           </style>
 
@@ -320,38 +251,39 @@
     </div>
   </nav>
   <header>
-
       <h1>Projects IT Academy</h1>
-
+  </header>
+  <main>
       <div class="row">
 
-
         <div class="card" style="width: 18rem;">
-            <img src="../../../images/imagesGithub/spring.jpa.jpg" class="card-img-top" alt="spring image" width="200px" height="150px">
-            <div class="card-title cardCenter">Spring Project - Start</div>
-            <div class="card-body">
-              <p class="card-text">This is the first project for Spring. There are new to come and right now I am doing them.</p>
-              <p class="card-text">Te exercice is to see a simple message just puting a name in the url of the navigator</p>
-            </div>
+            <a href="https://github.com/cotoflux/SpringGettingStarted"class="centerImageCard1" target="_blank"></a>
+            <br>
+            <a href="https://github.com/cotoflux/SpringGettingStarted" class="cardCenter">
+                <h4 id="decoration">Spring Initial project</h4>
+                <p>Java - Backend 100%</p>
+            </a>
+        
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="../../../images/imagesGithub/flowerShop.jpg" class="card-img-top" alt="flower shop" width="200px" height="150px">
-            <div class="card-title cardCenter">Pure java - Backend !00%</div>
-            <div class="card-body">
-              <p class="card-text">There is no font as is a Backend exercice so you will have to execute it to see.</p>
-              <p class="card-text">Here I created a project in wich we did a program to run a flower shop with only three cathegories of products. </p>
-            </div>
+        <div class="card border" style="width: 18rem;">
+            <a href="https://github.com/cotoflux/Floristeria"class="centerImageCard2" target="_blank"></a>
+            <br>
+            <a href="https://github.com/cotoflux/Floristeria" class="cardCenter">
+                <h4 id="decoration">Floristeria</h4>
+                <p>Java - Backend 100%</p>
+            </a>
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="../../../images/imagesGithub/rocket.jpg" class="card-img-top" alt="rocket foto" width="200px" height="150px">
-            <div class="card-title cardCenter">Pure java - Backedn 100%</div>
-            <div class="card-body">
-              <p class="card-text">We tried to reproduce a rocket and had to be possible to lunch it self and see it through the console.</p>
-            </div>
+        <div class="card border" style="width: 18rem;">
+            <a href="https://github.com/cotoflux/SpringGettingStarted"class="centerImageCard3" target="_blank"></a>
+            <br>
+            <a href="https://github.com/cotoflux/SpringGettingStarted" class="cardCenter">
+                <h4>Rocket</h4>
+                <p>Java - Backend 100%</p>
+            </a>
         </div>
       </div>
-  </header>
+    </main>
   </body>
   </html>
