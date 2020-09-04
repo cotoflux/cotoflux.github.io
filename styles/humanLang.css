@@ -1,0 +1,238 @@
+
+#t-cards {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #345;    
+}
+
+/********************************/
+/*          Panel cards         */
+/********************************/
+.panel.panel-card {
+  position: relative;
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+  position: relative;
+  z-index: 2;
+  height: 120px;
+  border-bottom-color: #fff;
+  overflow: hidden;
+  
+  -webkit-transition: height 600ms ease-in-out;
+          transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120%;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+}
+.panel.panel-card .panel-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.panel.panel-card .panel-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 95%;
+  opacity: 1; 
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+  
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+
+.panel.panel-card .panel-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+} 
+
+.panel.panel-card .panel-thumbnails {
+  padding: 0 15px 20px;
+}
+.panel-thumbnails .thumbnail {
+  width: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+} 
+
+
+.panel.panel-card:hover .panel-heading {
+  height: 55px;
+  
+  -webkit-transition: height 400ms ease-in-out;
+          transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+  opacity: 0;
+  
+  -webkit-transition: opacity 400ms ease-in-out;
+          transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+  padding-top: 20px;
+  
+  -webkit-transition: padding 400ms ease-in-out;
+          transition: padding 400ms ease-in-out;
+}
+/*Hoover git*/
+.thumbnail:hover {
+        box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+
+      /**Footer*/
+      .row{
+          flex-direction: row;
+          justify-content: center;
+      }
+      #personal{
+        text-align: center;
+        font-family: 'Handlee', cursive;
+        size: 26px;
+      }
+      a:hover{
+        font-weight: bold;
+        
+      }
+
+      .border:hover{
+        box-shadow: 0 15px 15px rgba(56, 98, 236, 0.25), 0 6px 6px rgba(0,0,0,0.30);
+
+      }
+
+      .titleTestimonials{
+        height: 60px;
+        background-color: lightgray;
+      }
+
+      i{
+        padding: 1%;
+        font-size: 20px;
+      }
+      footer{
+        background-color: lightgray;
+      }
+
+      .button{
+        width: 200px;
+      }
+
+      .button:hover{
+        font-weight: bold;
+        font-size: large;
+        color: black;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+
+      .thumbnail:hover{
+        box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+
+      header {
+        background-image: url("../images/schools/paris.jpg");
+        color: white;
+        padding: 50px 0;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+
+      .french{
+        background: url("../images/languages/france.jpg");
+        background-size: 100%;
+        border: black;
+        color:black;
+        font-weight: bolder;
+        font-size: 22px;
+        vertical-align: auto;
+        align-self: auto;
+      }
+      
+      .english{
+        background: url("../images/languages/english.jpg");
+        background-size: 100%;
+        border: black;
+        color:wheat;
+        font-weight: bolder;
+        font-size: 22px;
+        vertical-align: auto;
+        align-self: auto;
+      }
+      .spanish{
+        background: url("../images/languages/spanish.jpg");
+        background-size: 100%;
+        border: black;
+        color:wheat;
+        font-weight: bolder;
+        font-size: 22px;
+        vertical-align: auto;
+        align-self: auto;
+      }
+
+      .catalan{
+        background: url("../images/languages/catalan.jpg");
+        background-size: 100%;
+        border: black;
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+        vertical-align: auto;
+        align-self: auto;
+        
+      }
+
+      h1{
+        color:white;
+        font-weight: bolder;
+      }
+
+      .toSee{
+        text-shadow: -2px 2px 0 #000, 
+                          2px 2px 0 #000, 
+                         2px -2px 0 #000; 
+                        
+      }
+
+      .toSeeW{
+        text-shadow: -1px 1px 0 #fff, 
+                          1px 1px 0 #fff, 
+                         1px -1px 0 #fff; 
+                        
+      }
+
+      /*Badge*/
+      .chip{
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.25);
+        margin: 0 10px;
+        
+        cursor: pointer;
+      }
+      .chip.info{
+        background: #0a8684;
+        color: whitesmoke;
+      }
